@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qixin Xiao · Embodied AI & Robot Learning</title>
+  <meta name="description" content="Qixin Xiao — Computer Science + Philosophy at the University of Michigan. Research in Embodied AI, Multimodal Robot Learning, and World Models." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav-inner container">
+      <a href="#about" class="brand">
+        <span class="brand-mark">QX</span>
+        <span class="brand-name">Qixin Xiao</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="CV_Qixin_Xiao_Full_Version.pdf" target="_blank" rel="noopener" class="nav-cv">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container layout">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+      <div class="avatar">
+        <img src="assets/avatar.jpg" alt="Qixin Xiao" onerror="this.remove()" />
+        <div class="avatar-fallback">QX</div>
+      </div>
+
+      <h1 class="name">Qixin Xiao</h1>
+
+      <div class="affil">
+        <p><strong>B.S. Computer Science + Philosophy</strong></p>
+        <p><strong>University of Michigan</strong></p>
+      </div>
+
+      <p class="tagline">Embodied AI · Multimodal Robot Learning · World Models</p>
+
+      <p class="status"><span class="pulse"></span>Ann Arbor, MI</p>
+
+      <ul class="side-links">
+        <li><a href="mailto:qxiaocs@umich.edu">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=lqyNeO4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://github.com/chloeqxq" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/qixin-xiao-a4b775272/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="CV_Qixin_Xiao_Full_Version.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></li>
+      </ul>
+    </aside>
+
+    <!-- ============ MAIN ============ -->
+    <main class="main">
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="sec-head">
+          <span class="sec-idx">01</span>
+          <h2>About</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            I am an undergraduate at the <a href="https://cse.engin.umich.edu/" target="_blank" rel="noopener">University of Michigan</a>
+            studying Computer Science (Robotics &amp; Vision track) and Philosophy, with a 4.0/4.0 GPA.
+            I work with <a href="https://curly.engin.umich.edu/" target="_blank" rel="noopener">Prof. Maani Ghaffari</a> and
+            <a href="https://web.eecs.umich.edu/~stellayu/" target="_blank" rel="noopener">Prof. Stella Yu</a> at UMich, and previously
+            with <a href="https://mwang.princeton.edu/" target="_blank" rel="noopener">Prof. Mengdi Wang</a> at Princeton.
+          </p>
+          <p>
+            My research interests lie in <em class="hl">Embodied AI</em> and <em class="hl">Multimodal Robot Learning</em>,
+            focusing on developing scalable, predictive <em class="hl">World Models</em> that capture stable physical dynamics
+            through robust latent state estimation. I aim to bridge multimodal perception and embodied spatial understanding
+            to create actionable representations for reliable robotic decision-making and physical interaction.
+          </p>
+        </div>
+      </section>
+
+      <!-- NEWS -->
+      <section id="news" class="section">
+        <div class="sec-head">
+          <span class="sec-idx">02</span>
+          <h2>News</h2>
+        </div>
+        <ul class="news">
+          <li><time>2026</time><span><strong>GenEnv</strong> accepted to <span class="venue-inline">NeurIPS 2026</span> (co-first author).</span></li>
+          <li><time>2026</time><span><strong>MACD</strong> accepted to <span class="venue-inline">ICML 2026</span> (first author).</span></li>
+          <li><time>2026</time><span><strong>LongNav-R1</strong> accepted to <span class="venue-inline">RSS 2026</span>.</span></li>
+          <li><time>2026</time><span><strong>MoPe</strong> accepted to <span class="venue-inline">RSS 2026 Workshop</span> (sole author).</span></li>
+        </ul>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section">
+        <div class="sec-head">
+          <span class="sec-idx">03</span>
+          <h2>Publications</h2>
+        </div>
+
+        <div class="pub-toolbar">
+          <p class="legend">† corresponding &nbsp;·&nbsp; * equal contribution</p>
+        </div>
+
+        <h3 class="sub-label">Conference Publications</h3>
+
+        <article class="pub">
+          <div class="thumb"><span>LaWM</span></div>
+          <div class="pub-body">
+            <h4>LaWM: Least Action World Models for Long-Horizon Physical Consistency from Visual Observations</h4>
+            <p class="authors"><span class="me">Q. Xiao</span>†, M. Ghaffari</p>
+            <p class="meta"><span class="venue pending">CVPR 2027 · Submitting</span><span class="tag">World Model</span></p>
+            <p class="links">
+              <a href="https://arxiv.org/pdf/2605.08279" target="_blank" rel="noopener">[Paper]</a>
+              <a href="https://chloeqxq.github.io/LaWM_ProjectPage/" target="_blank" rel="noopener">[Project Page]</a>
+              <a href="https://github.com/chloeqxq/LaWM" target="_blank" rel="noopener">[GitHub]</a>
+            </p>
+            <details class="pub-more">
+              <summary>Research details</summary>
+              <div class="more-body">
+                <p class="more-ctx">Maani Ghaffari's Group, University of Michigan · Oct 2025 — Present</p>
+                <ul>
+                <li>Proposed LaWM, a latent world-modeling framework that operationalizes the Principle of Least Action in learned visual latent space, making physical structure part of the rollout mechanism rather than a post-hoc regularizer.</li>
+                <li>Designed a latent variational integrator that encodes observations into generalized latent coordinates, learns a latent discrete Lagrangian, constructs a discrete action functional, and advances prediction through the discrete Euler–Lagrange condition.</li>
+                <li>Built an end-to-end visual prediction system with learned encoder, decoder, latent Lagrangian, context encoder, and differentiable finite-step DEL solver, enabling long-horizon rollout directly from visual observations.</li>
+                <li>Demonstrated improved physical invariance, background consistency, motion smoothness, and embodied prediction quality across physics-clean dynamics and RoboScape-style robot interaction benchmarks.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="thumb"><span>MACD</span></div>
+          <div class="pub-body">
+            <h4>MACD: Model-Aware Contrastive Decoding via Counterfactual Data for Video-LLMs</h4>
+            <p class="authors"><span class="me">Q. Xiao</span>†, K. Zhou</p>
+            <p class="meta"><span class="venue">ICML 2026</span><span class="tag">Video-LLM</span><span class="tag">Hallucination</span></p>
+            <p class="links">
+              <a href="https://arxiv.org/pdf/2602.01740" target="_blank" rel="noopener">[Paper]</a>
+            </p>
+            <details class="pub-more">
+              <summary>Research details</summary>
+              <div class="more-body">
+                <p class="more-ctx">Lead-authored research · First &amp; corresponding author</p>
+                <ul>
+                <li>Proposed MACD, a training-free inference strategy that reduces Video-LLM hallucination by integrating model-aware counterfactual inputs into contrastive decoding for evidence-grounded token selection.</li>
+                <li>Built an object-/frame-level counterfactual pipeline: detect and track objects, initialize soft spatio-temporal masks, then optimize mask strengths via gradient ascent on the VLM loss to mine evidence-critical regions.</li>
+                <li>Demonstrated consistent gains across 4 benchmarks and 6 backbone VLMs (Qwen-VL and InternVL families; EventHallusion F1 0.68 → 0.85 and Acc 0.60 → 0.75; MVBench Acc 0.55 → 0.77).</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="thumb"><span>GenEnv</span></div>
+          <div class="pub-body">
+            <h4>GenEnv: Difficulty-Aligned Co-Evolution Between LLM Agents and Environment Simulators</h4>
+            <p class="authors">J. Guo*, L. Yang*, <span class="me">Q. Xiao</span>*, …, M. Wang†</p>
+            <p class="meta"><span class="venue">NeurIPS 2026</span><span class="venue ghost">ICLR 2026 Workshop</span><span class="tag">LLM Agents</span></p>
+            <p class="links">
+              <a href="https://arxiv.org/pdf/2512.19682" target="_blank" rel="noopener">[Paper]</a>
+              <a href="https://github.com/Gen-Verse/GenEnv" target="_blank" rel="noopener">[GitHub]</a>
+            </p>
+            <details class="pub-more">
+              <summary>Research details</summary>
+              <div class="more-body">
+                <p class="more-ctx">Mengdi Wang's Group, Princeton University · May 2025 — Oct 2025</p>
+                <ul>
+                <li>Developed GenEnv, a co-evolutionary framework where an LLM-based simulator generates difficulty-aligned curricula, shifting training from static supervision to a data-evolving paradigm.</li>
+                <li>Designed the α-Curriculum Reward to align task difficulty with the agent's Zone of Proximal Development, forming a co-evolution loop where the environment evolves to consistently challenge the agent.</li>
+                <li>Implemented Reward-Weighted Regression for closed-loop simulator updates, outperforming Gemini offline augmentation using 3.3× less data by prioritizing high-value training trajectories.</li>
+                <li>Achieved up to 40.3% improvement, enabling 7B agents to approach the performance of 70B+ models.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="thumb"><span>LongNav</span></div>
+          <div class="pub-body">
+            <h4>LongNav-R1: Horizon-Adaptive Multi-Turn RL for Long-Horizon VLA Navigation</h4>
+            <p class="authors">Y. Hu, A. Xi, <span class="me">Q. Xiao</span>, …, R. Vasudevan†, M. Ghaffari†</p>
+            <p class="meta"><span class="venue">RSS 2026</span><span class="tag">VLA</span><span class="tag">RL</span></p>
+            <p class="links">
+              <a href="https://arxiv.org/pdf/2602.12351" target="_blank" rel="noopener">[Paper]</a>
+            </p>
+            <details class="pub-more">
+              <summary>Research details</summary>
+              <div class="more-body">
+                <p class="more-ctx">Maani Ghaffari's Group, University of Michigan · Oct 2025 — Present</p>
+                <ul>
+                <li>Proposed LongNav-R1, an end-to-end multi-turn RL framework that reformulates long-horizon 3D embodied VLA navigation as a continuous conversation between policy and environment, with an implicit latent state in context.</li>
+                <li>Developed a horizon-adaptive mechanism (HAPO) with critic-free kernel regression and temporal-aware kernels for long-horizon credit assignment beyond single-turn BC.</li>
+                <li>Optimized VLA models via scalable multi-turn rollouts with KV-cache reuse and online token pruning, supporting efficient long-context decision-making at 0.23s / 400 steps (≈ 5 FPS).</li>
+                <li>Improved Qwen3-VL-2B success rate from 64.3% → 73.0% using 4,000 rollouts, and validated Sim-to-Real robustness with zero-shot real-world long-horizon navigation.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="thumb"><span>MoPe</span></div>
+          <div class="pub-body">
+            <h4>MoPe: Motion Permanence for Robust Monocular Gaussian Mapping in Dynamic Environments</h4>
+            <p class="authors"><span class="me">Q. Xiao</span></p>
+            <p class="meta"><span class="venue">RSS 2026 Workshop</span><span class="tag">3DGS</span><span class="tag">Mapping</span></p>
+            <p class="links">
+              <a href="https://arxiv.org/pdf/2606.29237" target="_blank" rel="noopener">[Paper]</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="thumb"><span>CCAD</span></div>
+          <div class="pub-body">
+            <h4>CCAD: Anomaly Detection Conditioned on a Compressed Global Feature Space</h4>
+            <p class="authors">X. Jin*, L. Diao*, <span class="me">Q. Xiao</span>, Y. Hu, Y. Liu, Z. Zhang, H. Gu</p>
+            <p class="meta"><span class="venue pending">Preprint</span><span class="tag">Diffusion</span></p>
+            <p class="links">
+              <a href="https://arxiv.org/pdf/2512.21459" target="_blank" rel="noopener">[Paper]</a>
+              <a href="https://github.com/chloeqxq/CCAD" target="_blank" rel="noopener">[GitHub]</a>
+            </p>
+            <details class="pub-more">
+              <summary>Research details</summary>
+              <div class="more-body">
+                <p class="more-ctx">VisionX LLC · AI Researcher Intern · May 2024 — Jan 2025</p>
+                <ul>
+                <li>Proposed CCAD, a Stable Diffusion-based generative framework that replaces text conditioning with a global-feature-conditioned mechanism via custom cross-attention layers.</li>
+                <li>Designed a two-stage global feature compression module (ResNet-RNN &amp; PatchCore) that encodes visual states into compact latent representations, reducing dimensionality by 35%.</li>
+                <li>Implemented ControlNet-inspired modulation and self-attention blocks to guide the denoising process, reaching 99% Pixel-AUC and 96% F1.</li>
+                <li>Surpassed diffusion-based SOTAs (DDAD, DiAD) in convergence speed and accuracy, and contributed fine-grained pixel-level annotations to the DAGM dataset.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <h3 class="sub-label">Works in Progress</h3>
+
+        <article class="pub compact">
+          <div class="pub-body">
+            <h4>Learning Whole-Body Human–Humanoid Collaboration from Egocentric Vision via Multi-Agent Distillation</h4>
+            <p class="meta"><span class="venue pending">In Preparation · CVPR 2027</span><span class="tag">Co-first author</span><span class="tag">Humanoid</span></p>
+            <details class="pub-more">
+              <summary>Research details</summary>
+              <div class="more-body">
+                <p class="more-ctx">Stella Yu's Group, University of Michigan · Sep 2026 — Present</p>
+                <ul>
+                <li>Eliminating the need for external motion capture by directing human–robot collaboration entirely through onboard egocentric vision.</li>
+                <li>Translating multi-agent RL policies trained in state space into deployable vision-based models via policy distillation.</li>
+                <li>Scaling robot control from restricted upper-body commands to full whole-body coordination to support more complex physical interactions.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="pub compact">
+          <div class="pub-body">
+            <h4>Eliciting and Steering Latent Capabilities in VLA Models with Neuron-Targeted Training</h4>
+            <p class="meta"><span class="venue pending">In Preparation · CVPR 2027</span><span class="tag">First author</span><span class="tag">VLA</span></p>
+            <details class="pub-more">
+              <summary>Research details</summary>
+              <div class="more-body">
+                <p class="more-ctx">Lead-authored research · First author</p>
+                <ul>
+                <li>Overcoming the catastrophic forgetting associated with full-model fine-tuning by developing a neuron-targeted training framework for VLA models.</li>
+                <li>Identifying capability-specific neurons in OpenVLA-7B by applying Sparse Autoencoders (SAEs) and linear probing to contrastive success/failure datasets.</li>
+                <li>Correcting specific manipulation failures via localized updates, keeping the rest of the pre-trained model behaviors strictly intact.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+      </section>
+
+      <!-- INDUSTRY -->
+      <section id="experience" class="section">
+        <div class="sec-head">
+          <span class="sec-idx">04</span>
+          <h2>Industry Experience</h2>
+        </div>
+        <div class="card">
+          <div class="tl-head">
+            <div>
+              <h3>VisionX LLC</h3>
+              <p class="role">Machine Learning Engineer Intern · Santa Clara, CA</p>
+            </div>
+            <span class="date">May 2024 — Sep 2024</span>
+          </div>
+          <p class="card-title">High-Performance Tennis Training AI Assistant on Edge Devices</p>
+          <ul class="bullets">
+            <li>Image-based system analyzing ball trajectory and athletes' pose and position through real-time trajectory detection and pose prediction.</li>
+            <li>Built on CenterNet with temporal convolutional networks and a focal Dice loss, improving trajectory prediction accuracy by 22%.</li>
+            <li>Multi-hypothesis tracking with adaptive Kalman filtering and player motion models, reducing tracking errors by 30%.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <div class="sec-head">
+          <span class="sec-idx">05</span>
+          <h2>Education</h2>
+        </div>
+        <div class="edu">
+          <div class="edu-item">
+            <div class="tl-head">
+              <div>
+                <h3>University of Michigan, Ann Arbor</h3>
+                <p class="role">B.S. in Computer Science (Robotics &amp; Vision Track) + Philosophy</p>
+              </div>
+              <span class="date">Jan 2025 — Dec 2026</span>
+            </div>
+            <p class="edu-line"><span class="k">GPA</span> 4.0 / 4.0 (A+ in all major courses)</p>
+            <p class="edu-line"><span class="k">Grad Courses</span> Autonomous Robotics · Reinforcement Learning · Mobile Robotics · Action and Perception</p>
+            <p class="edu-line"><span class="k">Advisors</span> Prof. Maani Ghaffari, Prof. Stella Yu @ UMich · Prof. Mengdi Wang @ Princeton</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <div class="sec-head">
+          <span class="sec-idx">06</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-row">
+            <span class="skill-k">ML Frameworks &amp; Methods</span>
+            <div class="skill-v"><span>PyTorch</span><span>Diffusion</span><span>3DGS</span><span>LeRobot</span><span>OpenCV</span></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-k">Robotics, Sim &amp; Hardware</span>
+            <div class="skill-v"><span>Isaac Sim / Gym / Lab</span><span>Habitat</span><span>ROS2</span><span>MuJoCo</span><span>Foxglove</span><span>Unitree Go1</span></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-k">Languages &amp; Tools</span>
+            <div class="skill-v"><span>Python</span><span>C/C++</span><span>Bash</span><span>MATLAB</span><span>SQL</span><span>Linux</span><span>Docker</span><span>Git</span><span>AWS</span></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Qixin Xiao · Last updated Sep 2026</p>
+        <p class="mono">built with care · <a href="#about">back to top ↑</a></p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

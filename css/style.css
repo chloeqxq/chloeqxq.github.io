@@ -1,20 +1,21 @@
 /* =========================================================
    Qixin Xiao — personal site
-   Palette: fresh green #2DB84D + deep #16803A, sunshine yellow #FFC72C
+   Palette: dark forest #0B1510, leaf green #4ADE80, sunlight #FFC94A
    ========================================================= */
 
 :root {
-  --cyan: #22c55e;
-  --teal: #16b050;
-  --teal-deep: #12a046;
-  --sun: #ffc72c;
+  --cyan: #4ade80;
+  --teal: #3ccf72;
+  --teal-deep: #7ee8a4;
+  --sun: #ffc94a;
 
-  --ink: #14232b;
-  --text: #3d4c54;
-  --muted: #7d8c94;
-  --line: #e2ebee;
-  --bg: #ffffff;
-  --surface: #ffffff;
+  --ink: #eef5ee;
+  --text: #b8c7bc;
+  --muted: #7d9384;
+  --line: rgba(220, 240, 225, 0.1);
+  --bg: #0b1510;
+  --surface: #0b1510;
+  --on-accent: #07140c;
 
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -36,6 +37,34 @@ body {
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 55% 42% at 92% -6%, rgba(255, 206, 110, 0.28), transparent 70%),
+    linear-gradient(118deg, transparent 38%, rgba(255, 214, 130, 0.07) 44%, transparent 52%),
+    linear-gradient(112deg, transparent 56%, rgba(255, 214, 130, 0.06) 60%, transparent 66%),
+    linear-gradient(124deg, transparent 70%, rgba(255, 214, 130, 0.045) 74%, transparent 79%),
+    radial-gradient(circle at 18% 28%, rgba(255, 206, 110, 0.07), transparent 12%),
+    radial-gradient(circle at 64% 58%, rgba(255, 206, 110, 0.05), transparent 10%),
+    radial-gradient(circle at 38% 86%, rgba(255, 206, 110, 0.05), transparent 11%),
+    radial-gradient(circle at 86% 78%, rgba(120, 220, 150, 0.05), transparent 14%),
+    radial-gradient(ellipse 70% 60% at 10% 100%, rgba(0, 0, 0, 0.45), transparent 70%),
+    linear-gradient(180deg, #0f1d16 0%, #0b1510 45%, #08100c 100%);
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='1000' preserveAspectRatio='xMidYMid slice'%3E%3Cfilter id='f' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0075' numOctaves='3' seed='11'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 0.83 0 0 0 0 0.48 1.1 0 0 0 -0.6'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E") center / cover no-repeat;
+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 88% 0%, #000 0%, rgba(0, 0, 0, 0.45) 55%, rgba(0, 0, 0, 0.12) 100%);
+  mask-image: radial-gradient(ellipse 90% 80% at 88% 0%, #000 0%, rgba(0, 0, 0, 0.45) 55%, rgba(0, 0, 0, 0.12) 100%);
 }
 
 a { color: var(--teal-deep); text-decoration: none; transition: color .2s; }
@@ -64,7 +93,7 @@ strong { color: var(--ink); font-weight: 600; }
   top: 0;
   z-index: 50;
   height: var(--nav-h);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(11, 21, 16, 0.82);
   backdrop-filter: saturate(160%) blur(12px);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
   border-top: 4px solid var(--sun);
@@ -116,7 +145,7 @@ strong { color: var(--ink); font-weight: 600; }
   transition: background .2s, color .2s;
 }
 .nav-links .nav-cv::after { display: none; }
-.nav-links .nav-cv:hover { background: var(--cyan); color: #fff; }
+.nav-links .nav-cv:hover { background: var(--cyan); color: var(--on-accent); }
 
 .nav-toggle { display: none; background: none; border: 0; width: 32px; height: 32px; cursor: pointer; position: relative; }
 .nav-toggle span { position: absolute; left: 6px; right: 6px; height: 1.5px; background: var(--ink); transition: transform .25s, top .25s; }
@@ -167,7 +196,7 @@ strong { color: var(--ink); font-weight: 600; }
   font-size: 40px;
   font-weight: 500;
   color: var(--teal);
-  background: #fff;
+  background: var(--bg);
 }
 
 .name {
@@ -336,10 +365,10 @@ strong { color: var(--ink); font-weight: 600; }
   padding: 1px 7px;
   border: 1.5px solid var(--teal);
   background: var(--teal);
-  color: #fff;
+  color: var(--on-accent);
 }
-.venue.ghost { background: #fff; color: var(--teal-deep); border-color: var(--cyan); }
-.venue.pending { background: #fff; color: var(--teal-deep); border-color: var(--cyan); }
+.venue.ghost { background: transparent; color: var(--teal-deep); border-color: var(--cyan); }
+.venue.pending { background: transparent; color: var(--teal-deep); border-color: var(--cyan); }
 .tag {
   font-family: var(--mono);
   font-size: 11.5px;
@@ -375,7 +404,7 @@ strong { color: var(--ink); font-weight: 600; }
   line-height: 1;
   color: var(--cyan);
 }
-.pub-more[open] summary::before { content: "−"; background: var(--cyan); color: #fff; }
+.pub-more[open] summary::before { content: "−"; background: var(--cyan); color: var(--on-accent); }
 .pub-more summary:hover { color: var(--cyan); }
 .more-body {
   margin-top: 12px;
@@ -431,7 +460,7 @@ strong { color: var(--ink); font-weight: 600; }
   font-size: 11px;
   padding: 1px 7px;
   background: var(--teal);
-  color: #fff;
+  color: var(--on-accent);
 }
 .proj-desc { font-size: 14.5px; }
 .proj-arch { margin-top: 20px; }
@@ -500,7 +529,7 @@ strong { color: var(--ink); font-weight: 600; }
     flex-direction: column;
     height: auto;
     padding: 10px 20px 18px;
-    background: #ffffff;
+    background: #0b1510;
     border-bottom: 1px solid var(--line);
     transform: translateY(-8px);
     opacity: 0;

@@ -1,12 +1,13 @@
 /* =========================================================
    Qixin Xiao — personal site
-   Palette: vivid blue #00A6F2 + deep #0079BE
+   Palette: fresh green #2DB84D + deep #16803A, sunshine yellow #FFC72C
    ========================================================= */
 
 :root {
-  --cyan: #00a6f2;
-  --teal: #0092db;
-  --teal-deep: #0079be;
+  --cyan: #2db84d;
+  --teal: #1f9e40;
+  --teal-deep: #16803a;
+  --sun: #ffc72c;
 
   --ink: #14232b;
   --text: #3d4c54;
@@ -20,7 +21,7 @@
 
   --nav-h: 60px;
   --rule:
-    linear-gradient(var(--cyan), var(--cyan)) 0 50% / 44px 6px no-repeat,
+    linear-gradient(var(--sun), var(--sun)) 0 50% / 44px 6px no-repeat,
     linear-gradient(var(--cyan), var(--cyan)) 52px 50% / calc(100% - 52px) 2px no-repeat;
 }
 
@@ -66,7 +67,7 @@ strong { color: var(--ink); font-weight: 600; }
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: saturate(160%) blur(12px);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
-  border-top: 4px solid var(--cyan);
+  border-top: 4px solid var(--sun);
   border-bottom: 1px solid var(--line);
 }
 .nav-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; }
@@ -145,6 +146,7 @@ strong { color: var(--ink); font-weight: 600; }
   aspect-ratio: 4 / 5;
   border: 3px solid var(--cyan);
   border-bottom-width: 8px;
+  border-bottom-color: var(--sun);
   margin-bottom: 24px;
 }
 .avatar img,
@@ -193,7 +195,7 @@ strong { color: var(--ink); font-weight: 600; }
   position: absolute;
   top: 0; left: 0;
   width: 44px; height: 5px;
-  background: var(--cyan);
+  background: var(--sun);
 }
 
 .status {
@@ -207,7 +209,7 @@ strong { color: var(--ink); font-weight: 600; }
 }
 .pulse {
   width: 8px; height: 8px;
-  background: var(--cyan);
+  background: var(--sun);
 }
 
 .side-links { list-style: none; }
@@ -308,6 +310,7 @@ strong { color: var(--ink); font-weight: 600; }
   overflow: hidden;
   border: 2px solid var(--cyan);
   border-bottom-width: 6px;
+  border-bottom-color: var(--sun);
   background: #fff;
   display: grid;
   place-items: center;

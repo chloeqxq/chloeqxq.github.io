@@ -245,14 +245,18 @@ strong { color: var(--ink); font-weight: 600; }
   font-family: var(--mono);
   font-size: 12px;
   color: var(--muted);
-  margin-bottom: 18px;
+  margin-bottom: 6px;
 }
+.status a { color: var(--text); }
+.status a:hover { color: var(--cyan); }
 .pulse {
+  flex-shrink: 0;
   width: 8px; height: 8px;
   background: var(--sun);
 }
+.pulse.mail { background: transparent; border: 1.5px solid var(--cyan); }
 
-.side-links { list-style: none; }
+.side-links { list-style: none; margin-top: 12px; }
 .side-links li + li { margin-top: 4px; }
 .side-links a {
   display: flex;

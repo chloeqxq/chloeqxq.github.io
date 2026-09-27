@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
 </head>
 <body>
   <!-- ============ NAV ============ -->
@@ -301,7 +301,7 @@
         <article class="project">
           <div class="tl-head">
             <div>
-              <h3>Bimanual Skewering Robot</h3>
+              <h3>PIERCE: Bimanual Fruit-Skewering Robot</h3>
               <p class="role">Capstone Project</p>
             </div>
           </div>
@@ -319,8 +319,9 @@
             </a>
           </div>
           <p class="proj-desc">
-            Built a 3D-printed bimanual robot from scratch, collected real-world demonstrations via teleoperation,
-            and trained a SmolVLA manipulation policy with LeRobot.
+            Built a 3D-printed bimanual robot from scratch: the left arm stabilizes the skewer, the right arm aligns and
+            inserts fruit, and a 360° rotating base extends picking reach. Collected demonstrations via leader–follower
+            teleoperation and trained a vision-based SmolVLA policy with LeRobot.
           </p>
           <div class="meta">
             <span class="venue ghost">3D-Printed Hardware</span>
@@ -328,6 +329,9 @@
             <span class="venue ghost">LeRobot</span>
             <span class="venue ghost">SmolVLA</span>
           </div>
+          <figure class="proj-arch">
+            <img src="assets/project/architecture.png" alt="PIERCE system architecture: sense–plan–act loop and imitation learning dataflow" loading="lazy" />
+          </figure>
         </article>
       </section>
 

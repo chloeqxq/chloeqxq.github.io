@@ -434,6 +434,8 @@ strong { color: var(--ink); font-weight: 600; }
   color: #fff;
 }
 .proj-desc { font-size: 14.5px; }
+.proj-arch { margin-top: 20px; }
+.proj-arch img { width: 100%; display: block; }
 
 /* ---------- cards ---------- */
 

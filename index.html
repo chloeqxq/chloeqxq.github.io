@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=6" />
+  <link rel="stylesheet" href="css/style.css?v=7" />
 </head>
 <body>
   <!-- ============ NAV ============ -->
@@ -23,12 +23,11 @@
       </button>
       <nav class="nav-links">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#news">News</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
         <a href="CV_Qixin_Xiao_Full_Version.pdf" target="_blank" rel="noopener" class="nav-cv">CV</a>
       </nav>
     </div>
@@ -58,7 +57,6 @@
         <li><a href="https://scholar.google.com/citations?user=lqyNeO4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
         <li><a href="https://github.com/chloeqxq" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/qixin-xiao-a4b775272/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="CV_Qixin_Xiao_Full_Version.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></li>
       </ul>
     </aside>
 
@@ -91,10 +89,32 @@
         </div>
       </section>
 
+      <!-- EDUCATION -->
+      <section id="education" class="section">
+        <div class="sec-head">
+          <span class="sec-idx">02</span>
+          <h2>Education</h2>
+        </div>
+        <div class="edu">
+          <div class="edu-item">
+            <div class="tl-head">
+              <div>
+                <h3>University of Michigan, Ann Arbor</h3>
+                <p class="role">B.S. in Computer Science (Robotics &amp; Vision Track) + Philosophy</p>
+              </div>
+              <span class="date">Jan 2025 — Dec 2026</span>
+            </div>
+            <p class="edu-line"><span class="k">GPA</span> 4.0 / 4.0 (A+ in all major courses)</p>
+            <p class="edu-line"><span class="k">Grad Courses</span> Autonomous Robotics · Reinforcement Learning · Mobile Robotics · Action and Perception</p>
+            <p class="edu-line"><span class="k">Advisors</span> Prof. Maani Ghaffari, Prof. Stella Yu @ UMich · Prof. Mengdi Wang @ Princeton</p>
+          </div>
+        </div>
+      </section>
+
       <!-- NEWS -->
       <section id="news" class="section">
         <div class="sec-head">
-          <span class="sec-idx">02</span>
+          <span class="sec-idx">03</span>
           <h2>News</h2>
         </div>
         <ul class="news">
@@ -108,7 +128,7 @@
       <!-- PUBLICATIONS -->
       <section id="publications" class="section">
         <div class="sec-head">
-          <span class="sec-idx">03</span>
+          <span class="sec-idx">04</span>
           <h2>Publications</h2>
         </div>
 
@@ -295,7 +315,7 @@
       <!-- PROJECTS -->
       <section id="projects" class="section">
         <div class="sec-head">
-          <span class="sec-idx">04</span>
+          <span class="sec-idx">05</span>
           <h2>Projects</h2>
         </div>
         <article class="project">
@@ -338,7 +358,7 @@
       <!-- INDUSTRY -->
       <section id="experience" class="section">
         <div class="sec-head">
-          <span class="sec-idx">05</span>
+          <span class="sec-idx">06</span>
           <h2>Industry Experience</h2>
         </div>
         <div class="card">
@@ -355,50 +375,6 @@
             <li>Built on CenterNet with temporal convolutional networks and a focal Dice loss, improving trajectory prediction accuracy by 22%.</li>
             <li>Multi-hypothesis tracking with adaptive Kalman filtering and player motion models, reducing tracking errors by 30%.</li>
           </ul>
-        </div>
-      </section>
-
-      <!-- EDUCATION -->
-      <section id="education" class="section">
-        <div class="sec-head">
-          <span class="sec-idx">06</span>
-          <h2>Education</h2>
-        </div>
-        <div class="edu">
-          <div class="edu-item">
-            <div class="tl-head">
-              <div>
-                <h3>University of Michigan, Ann Arbor</h3>
-                <p class="role">B.S. in Computer Science (Robotics &amp; Vision Track) + Philosophy</p>
-              </div>
-              <span class="date">Jan 2025 — Dec 2026</span>
-            </div>
-            <p class="edu-line"><span class="k">GPA</span> 4.0 / 4.0 (A+ in all major courses)</p>
-            <p class="edu-line"><span class="k">Grad Courses</span> Autonomous Robotics · Reinforcement Learning · Mobile Robotics · Action and Perception</p>
-            <p class="edu-line"><span class="k">Advisors</span> Prof. Maani Ghaffari, Prof. Stella Yu @ UMich · Prof. Mengdi Wang @ Princeton</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- SKILLS -->
-      <section id="skills" class="section">
-        <div class="sec-head">
-          <span class="sec-idx">07</span>
-          <h2>Skills</h2>
-        </div>
-        <div class="skills">
-          <div class="skill-row">
-            <span class="skill-k">ML Frameworks &amp; Methods</span>
-            <div class="skill-v"><span>PyTorch</span><span>Diffusion</span><span>3DGS</span><span>LeRobot</span><span>OpenCV</span></div>
-          </div>
-          <div class="skill-row">
-            <span class="skill-k">Robotics, Sim &amp; Hardware</span>
-            <div class="skill-v"><span>Isaac Sim / Gym / Lab</span><span>Habitat</span><span>ROS2</span><span>MuJoCo</span><span>Foxglove</span><span>Unitree Go1</span></div>
-          </div>
-          <div class="skill-row">
-            <span class="skill-k">Languages &amp; Tools</span>
-            <div class="skill-v"><span>Python</span><span>C/C++</span><span>Bash</span><span>MATLAB</span><span>SQL</span><span>Linux</span><span>Docker</span><span>Git</span><span>AWS</span></div>
-          </div>
         </div>
       </section>
 
